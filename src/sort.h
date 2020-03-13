@@ -22,7 +22,7 @@
 *
 * @param tt The tensor to sort.
 * @param mode The primary for sorting.
-* @param dim_perm An permutation array that defines sorting priority. If NULL,
+* @param dim_perm A permutation array that defines sorting priority. If NULL,
 *                 a default ordering of {0, 1, ..., m} is used.
 */
 void tt_sort(
@@ -38,7 +38,7 @@ void tt_sort(
 *
 * @param tt The tensor to sort.
 * @param mode The primary for sorting.
-* @param dim_perm An permutation array that defines sorting priority. If NULL,
+* @param dim_perm A permutation array that defines sorting priority. If NULL,
 *                 a default ordering of {0, 1, ..., m} is used.
 * @param start The first nonzero to include in the sorting.
 * @param end The end of the nonzeros to sort (exclusive).
