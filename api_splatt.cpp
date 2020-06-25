@@ -32,7 +32,7 @@ int main()
 	}
 
 	cout<<"Splatt Success: "<< a <<endl;
-	cout<<"Factorization Splatt Success: "<< ret <<endl;
+	cout<<"Factorization Success: "<< ret <<endl;
 	/* cleanup */
 	splatt_free_csf(tt, cpd_opts);
 	splatt_free_kruskal(&factored);
