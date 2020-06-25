@@ -1,3 +1,10 @@
+// The following code is adopted from the README file shared in splatt github. 
+// Running the given sample API, I had many issues so created the following version which is up and running with the following commands. 
+// The following file can be run using the following commands in ubuntu command line
+// >> g++ -fopenmp api_splatt.cpp -lsplatt -llapack -lblas -o api_splatt
+// >> ./api_splatt
+// It is important to have lapack and blas libraries, and the linking libraries is also highly essential.
+
 #include <splatt.h>
 #include <iostream>
 
@@ -18,7 +25,6 @@ int ret = splatt_cpd_als(tt, 10, cpd_opts, &factored);
 
 int main()
 {
-	
 	/* do some processing */
 	for(splatt_idx_t m = 0; m < nmodes; ++m) {
 	  /* access factored.lambda and factored.factors[m] */
